@@ -1,0 +1,5 @@
+A secondary index is useful for fast lookups on non-primary-key columns. 
+-- Create a non-unique (secondary) index on last_name 
+CREATE INDEX idx_lastname ON employees(last_name); 
+-- Create a composite secondary index on (dept, salary) 
+CREATE INDEX idx_dept_salary ON employees(dept, salary);
